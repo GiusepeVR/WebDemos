@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web con imágenes">
+    <title>Mockup</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    
+
+    <!-- HOJAS DE ESTILO CSS ANIMATE LIBRARY-->
+    <link rel="stylesheet" href="./wow/animate.css">
+    <!-- HOJAS DE ESTILO LIGHTBOX-->
+    <link href="./lightbox/css/lightbox.css" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- MÓDULO GENERAL NAVBAR BOOTSTRAP 5 -->
+        <nav class="navbar navbar-expand-lg navbar-light gris-mockup darkgrey wow flipInY">
+            <div class="container">
+                <!-- LOGO - PUEDE SER IMAGEN O TEXTO -->
+                <a class="navbar-brand col-6 col-lg-3" href="./index.html">
+                    <!--img src="imagenes/logo.jpg" class="img-fluid" alt="logo personalizado"-->
+                    <h1 class="logotipo">YOUR LOGO</h1>
+                </a>
+
+                <!-- BOTÓN MENÚ DE HAMBURGUESA -->
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#menu01">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- CONTENEDOR LISTA DE VÍNCULOS -->
+                <div class="navbar-collapse collapse" id="menu01">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-center white-text">
+                        <!-- me-auto=IZQUIERDA / ms-auto=DERECHA -->
+                        <li class="nav-item active">
+                            <a class="nav-link lightbluetext" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PAGES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FEATURE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!--Carrusel en primera sección-->
+        <div class="container-fluid p-0">
+            <div>
+            
+                <div id="carousel01" class="carousel slide wow bounceIn" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel01" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carousel01" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel01" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="./imagenes/carrusel-01.jpg" data-lightbox="image-1" >
+                                <img src="./imagenes/slides/slide-01.jpg" class="d-block w-100 img-fluid limiter" alt="imagen de oficina genérica">
+                            </a>
+                            
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./imagenes/carrusel-02.jpg" data-lightbox="image-2">
+                                <img src="./imagenes/slides/slide-02.jpg" class="d-block w-100 img-fluid limiter" alt="imagen de oficina genérica">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./imagenes/carrusel-03.jpg" data-lightbox="image-3">
+                                <img src="./imagenes/slides/slide-03.jpg" class="d-block w-100 img-fluid limiter" alt="imagen de oficina genérica">
+                            </a>                        
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel01" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel01" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+
+    <section class="se1">
+        <div class="container text-center wow fadeIn" data-wow-delay="1.2s">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-4 p-lg-5 icono-texto-large wow bounceInUp" data-wow-delay="0.2s">
+                    <img src="imagenes/icono-research.png" alt="icono investigación"
+                        class="img-fluid p-5 darkgrey rounded">
+                    <h3>RESEARCH</h3>
+                    <p class="expanded-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+                        incidunt quam vero quasi quis labore.</p>
+                </div>
+                <div class="col-12 col-md-10 col-lg-4 p-lg-5 icono-texto-large bounceInUp" data-wow-delay="0.4s">
+                    <img src="imagenes/icono-custom.png" alt="icono computadora"
+                        class="img-fluid p-5 lightblue rounded">
+                    <h3 class="lightbluetext">FULLY CUSTOMIZABLE</h3>
+                    <p class="expanded-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil quod
+                        quibusdam esse debitis
+                        explicabo ullam recusandae. Molestias, ex labore doloremque.</p>
+                </div>
+                <div class="col-12 col-md-10 col-lg-4 p-lg-5 icono-texto-large bounceInUp" data-wow-delay="0.6s">
+                    <img src="imagenes/icono-work.png" alt="icono engranes" class="img-fluid p-5 darkgrey rounded">
+                    <h3>WORK AND WORK</h3>
+                    <p class="expanded-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil quod
+                        quibusdam esse debitis
+                        explicabo ullam recusandae. Molestias, ex labore doloremque.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="se2">
+        <div class="container text-center p-0 wow fadeIn">
+            <div class="row justify-content-center featured-works">
+                <div class="col-8 ">
+                    <h2 class="subtitulo-heavy">FEATURED WORKS</h2>
+                    <p class="expanded-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sint
+                        nam cupiditate deleniti magni. Corporis impedit sit repellendus pariatur atque quibusdam iste id
+                        qui corrupti?</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-fluid text-center p-0 g-0 wow bounceInUp">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    
+                        <div class="card">
+                            
+                            <img class="card-img" src="./imagenes/cuadrado-doble-1.jpg" alt="...">
+                            <div class="card-img-overlay align-items-center p-0">
+                                
+                                    <div class="contenedor-links">
+                                        <a href="https://facebook.com">
+                                            <img src="https://cdn.icon-icons.com/icons2/2348/PNG/512/link_icon_142996.png"
+                                                alt="icono de enlace">
+                                        </a>
+                                        <a href="./imagenes/cuadrado-doble-1.jpg" data-lightbox="grid-1">
+                                            <img src="./imagenes/search.png"
+                                                alt="icono de lupa" class="white-icon-tiny">
+                                        </a>
+                                    </div>
+                                
+                            </div>
+                        </div>
+                    
+                </div>
+    
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <img class="card-img" src="./imagenes/cuadrado-2.jpg" alt="...">
+                        <div class="card-img-overlay align-items-center p-0">
+                            <div class="contenedor-links">
+                                <a href="https://facebook.com">
+                                    <img src="https://cdn.icon-icons.com/icons2/2348/PNG/512/link_icon_142996.png"
+                                        alt="icono de enlace">
+                                </a>
+                                <a href="./imagenes/cuadrado-2.jpg" data-lightbox="grid-2">
+                                    <img src="./imagenes/search.png"
+                                        alt="icono de lupa" class="white-icon-tiny">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+    
+    
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <img class="card-img" src="./imagenes/cuadrado-3.jpg" alt="...">
+                        <div class="card-img-overlay align-items-center p-0">
+                            <div class="contenedor-links">
+                                <a href="https://facebook.com">
+                                    <img src="https://cdn.icon-icons.com/icons2/2348/PNG/512/link_icon_142996.png"
+                                        alt="icono de enlace">
+                                </a>
+                                <a href="./imagenes/cuadrado-3.jpg" data-lightbox="grid-3">
+                                    <img src="./imagenes/search.png"
+                                        alt="icono de lupa" class="white-icon-tiny">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <!--CIERRA EL PRIMER ROW-->
+    
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <img class="card-img" src="./imagenes/cuadrado-4.jpg" alt="...">
+                        <div class="card-img-overlay align-items-center p-0">
+                            <div class="contenedor-links">
+                                <a href="https://facebook.com">
+                                    <img src="./imagenes/link.png"
+                                        alt="icono de enlace">
+                                </a>
+                                <a href="./imagenes/cuadrado-4.jpg" data-lightbox="grid-4">
+                                    <img src="./imagenes/search.png"
+                                        alt="icono de lupa" class="white-icon-tiny">
+                                </a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <img class="card-img" src="./imagenes/cuadrado-5.jpg" alt="...">
+                        <div class="card-img-overlay align-items-center p-0">
+                            <div class="contenedor-links">
+                                <a href="https://facebook.com">
+                                    <img src="https://cdn.icon-icons.com/icons2/2348/PNG/512/link_icon_142996.png"
+                                        alt="icono de enlace">
+                                </a>
+                                <a href="./imagenes/cuadrado-5.jpg" data-lightbox="grid-5">
+                                    <img src="./imagenes/search.png"
+                                        alt="icono de lupa" class="white-icon-tiny">
+                                </a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="card">
+                        <img class="card-img" src="./imagenes/cuadrado-6.jpg" alt="...">
+                        <div class="card-img-overlay align-items-center p-0">
+                            <div class="contenedor-links">
+                                <a href="https://facebook.com">
+                                    <img src="https://cdn.icon-icons.com/icons2/2348/PNG/512/link_icon_142996.png"
+                                        alt="icono de enlace">
+                                </a>
+                                <a href="./imagenes/cuadrado-6.jpg" data-lightbox="grid-6">
+                                    <img src="./imagenes/search.png"
+                                        alt="icono de lupa" class="white-icon-tiny">
+                                </a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img" src="./imagenes/cuadrado-7.jpg" alt="...">
+                        <div class="card-img-overlay align-items-center p-0">
+                            <div class="contenedor-links">
+                                <a href="https://facebook.com">
+                                    <img src="https://cdn.icon-icons.com/icons2/2348/PNG/512/link_icon_142996.png"
+                                        alt="icono de enlace">
+                                </a>
+                                <a href="./imagenes/cuadrado-7.jpg" data-lightbox="grid-7">
+                                    <img src="./imagenes/search.png"
+                                        alt="icono de lupa" class="white-icon-tiny">
+                                </a>
+                                
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                
+            </div><!--CIERRA EL SEGUNDO ROW-->   
+            
+        </div>
+    <!--CIERRA EL SEGUNDO CONTAINER-->          
+
+    </section>
+
+    <section class="se3 lightgrey">
+        <div class="container wow fadeInLeft">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-4 hide-toggle">
+                    <!--mockup en foto-->
+                    <img src="./imagenes/mockup-tableta.png" alt="mockup web movil" class="img-fluid mup-tab">
+                </div>
+
+                <div class="col-12 col-md-8">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <h2 class="subtitulo-small">YOUR AWESOME TITLE</h2>
+                        </div>
+                    </div>
+
+                    <div class="row gy-4">
+                        <div class="col-12 col-xl-6">
+                            <p class="expanded-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+                                architecto optio! Odit rerum sequi, fugiat tenetur necessitatibus nemo explicabo ratione
+                                quis corrupti temporibus velit ut quam distinctio eveniet hic et!</p>
+                        </div>
+                        <div class="col-12 col-xl-4 gx-5">
+                            <p class="expanded-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+                                architecto optio! Odit rerum sequi, fugiat tenetur </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="darkgrey">
+        <div class="container-fluid wow bounceInUp">
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-8 col-lg-7 col-xl-3 px-5 gy-3 footer-data bounceInUp"><!--PRIMER COLUMNA DEL FOOTER-->
+                    <div class="row">
+                        <div class="col-12 col-xl-6">
+                            <h3>ABOUT US</h3>
+                        </div>
+                        <div class="col-12 col-xl-6 py-0">
+                            <img src="./imagenes/pleca-horizontal.png" alt="..." class="ornamento img-fluid w-100">
+                        </div>
+
+                        <div class="col-10-auto col-xl-11-start">
+                            <p class="expanded-text">Lorem ipsum dolor, sit amet consectetur elit. Nesciunt laborum rerum, natus
+                                voluptates pariatur exercitationem debitis voluptatum? Sapiente, vero deserunt? Sit ipsam quidem
+                                amet corrupti delectus magnam provident, blanditiis obcaecati?</p>
+                        </div>
+                    </div>
+                
+
+                </div>
+
+
+                <div class="col-12 col-sm-8 col-lg-7 col-xl-3 px-5 gy-3 footer-data bounceInUp"><!--SEGUNDA COLUMNA DEL FOOTER-->
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-xl-6">
+                            <h3>GET IN TOUCH</h3>                            
+                        </div>
+                        <div class="col-12 col-xl-6">
+                            <img src="./imagenes/pleca-horizontal.png" alt="..." class="ornamento img-fluid w-100">
+                        </div>
+
+                        <div class="col-10-auto col-xl-10-start">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="c1">Address:</td>
+                                        <td>66 South Street.<br>Window 6 Wonderland.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="c1">Phone:</td>
+                                        <td>+440 875369208 - Office<br>+440 875369208 - Fax</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="c1">Email:</td>
+                                        <td>freepile@sitename.com</td>
+                                    </tr>
+                
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-sm-8 col-lg-7 col-xl-3 px-5 gy-3 footer-data bounceInUp"><!--TERCERA COLUMNA DEL FOOTER-->
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-xl-6">
+                            <h3>SOCIAL MEDIA</h3>
+                        </div>
+                        <div class="col-12 col-xl-6">
+                            <img src="./imagenes/pleca-horizontal.png" alt="..." class="ornamento">
+                        </div>
+                    </div>                    
+                
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-7-start">
+                            <p class="expanded-text short-text limiter-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit magni nesciunt molestias obcaecati</p>
+                        </div>
+
+                        <div class="col-12 col-lg-4-start">
+                            <a href="https://www.youtube.com/" target="blank" class="blueicon wow bounceInUp">
+                                <img src="./imagenes/blue-icons/blue-icons_1yt.png" alt="icono">
+                            </a>
+                            <a href="https://es.wikipedia.org/wiki/Google%2B" target="blank" class="blueicon wow bounceInUp">
+                                <img src="./imagenes/blue-icons/blue-icons-2gp.png" alt="icono">
+                            </a>
+                            <a href="https://es-la.facebook.com/" target="blank" class="blueicon wow bounceInUp">
+                                <img src="./imagenes/blue-icons/blue-icons-3fb.png" alt="icono">
+                            </a>
+                            <a href="https://www.google.com/" target="blank" class="blueicon wow bounceInUp">
+                                <img src="./imagenes/blue-icons/blue-icons-4gb.png" alt="icono">
+                            </a>
+                            <a href="https://twitter.com/?lang=es" target="blank" class="blueicon wow bounceInUp">
+                                <img src="./imagenes/blue-icons/blue-icons-5tw.png" alt="icono">
+                            </a>
+                            <a href="https://www.instagram.com/?hl=es-la" target="blank" class="blueicon wow bounceInUp">
+                                <img src="./imagenes/blue-icons/blue-icons-6ig.png" alt="icono">
+                            </a>
+                        </div>
+                    </div>            
+                
+                    
+                
+                </div>
+
+            </div>
+        
+            <div class="row justify-content-center gx-0">
+                <div class="col-12 text-center very-darkgrey copyright">
+                    <p class="copyright-text">Copyright 2016</p>
+                </div>
+            </div>
+        
+        </div>
+
+        <!--div class="container-fluid copyright">
+            <div class="row justify-content-center g-0">
+                <div class="col-12 text-center">
+                    <p class="copyright-text">Copyright 2016</p>
+                </div>
+            </div>
+        </div-->
+
+        <!--div class="copyright very-darkgrey">
+            <p class="copyright-text">Copyright 2016</p>
+        </div-->
+
+    </footer>
+
+    <!--BOOTSTRAP script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+
+    <!--jquery script cdn-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+        </script>
+
+
+    <!--bootstrap slider script cdn-->
+    <script>
+        var myCarousel = document.querySelector('#carousel01')
+        var carousel = new bootstrap.Carousel(carousel01, {
+            interval: 2000,
+            wrap: true,
+            keyboard: true
+        })
+    </script>
+
+    <script src="./lightbox/js/lightbox.js"></script>
+
+    <script src="./wow/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    
+
+
+</body>
+
+</html>
